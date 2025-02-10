@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using 
+namespace Calculator;
+
+internal class Program : Calculator, IAdd, ISubstract
+{
+    static void Main(string[] args)
+    {
+
+        Calculator cal = new Calculator(1,2);
+    }
+}
