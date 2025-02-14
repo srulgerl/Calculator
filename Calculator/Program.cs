@@ -1,12 +1,15 @@
 ﻿using System;
-using 
+ 
 namespace Calculator;
 
-internal class Program : Calculator, IAdd, ISubstract
+internal class Program : Calculator
 {
     static void Main(string[] args)
     {
-
-        Calculator cal = new Calculator(1,2);
+        var res = 0;
+        Calculator cal = new Calculator();
+        cal.Add(3);
+        Console.WriteLine(cal.Result);
+        //cal.substract(); 
     }
 }

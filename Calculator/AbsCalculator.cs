@@ -8,10 +8,5 @@ namespace Calculator;
 
 internal abstract class AbsCalculator
 {
-    private decimal result
-    {
-        get; 
-    }
-
-
+    public decimal Result { get; set; }
 }

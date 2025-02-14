@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace Calculator;
 
-internal class Calculator : AbsCalculator, IAdd, ISubstract
+internal class Calculator : AbsCalculator, IOperations
 {
-    Calculator cal;
-     private Calculator(decimal n, decimal m)
-    {
 
-    }
-
-    public decimal add()
+    public void Add(decimal m)
     {
-        return ((IAdd)cal).add();
+        Result += m;
     }
-    public decimal substract()
+    public void Substract(decimal m)
     {
-        return ((ISubstract)cal).substract();
+        Result -= m;
     }
 }

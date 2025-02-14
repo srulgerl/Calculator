@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    internal interface ISubstract
+    internal interface IOperations
     {
-        decimal substract();
+        void Substract(decimal n);
+        void Add(decimal n);
     }
 }
