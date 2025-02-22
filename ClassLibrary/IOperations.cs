@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
-{
-    internal interface IOperations
+namespace CalculatorLibrary;
+internal interface IOperations
     {
         void Substract(decimal n);
         void Add(decimal n);
     }
-}
+
+

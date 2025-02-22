@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator;
-
-internal abstract class AbsCalculator
+namespace CalculatorLibrary;
+public interface IOperations
 {
-    public decimal Result { get; set; }
+        void Subtract(decimal n);
+        void Add(decimal n);
 }
+
+

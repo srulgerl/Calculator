@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator;
+namespace CalculatorLibrary;
 
 internal class Calculator : AbsCalculator, IOperations
 {
@@ -18,3 +18,4 @@ internal class Calculator : AbsCalculator, IOperations
         Result -= m;
     }
 }
+
