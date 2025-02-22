@@ -22,7 +22,7 @@ internal class Program
         memory.Store(cal.Result);
         Console.WriteLine($"{cal.Result}"); 
 
-        cal.Subtract(6);
+        cal.Subtract(cal.Result,6);
         memory.Store(cal.Result);
         Console.WriteLine($"{cal.Result}");
 

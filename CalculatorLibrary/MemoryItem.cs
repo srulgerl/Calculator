@@ -13,7 +13,7 @@ namespace CalculatorLibrary
     {
        
             /// <summary>
-            /// Санах ойд хадгалагдсан тоо.
+            /// Санах ойд хадгалагдсан утга.
             /// </summary>
             public decimal Value { get; private set; }
 
@@ -21,7 +21,7 @@ namespace CalculatorLibrary
             /// <summary>
             /// Санах ойн шинэ элемент үүсгэнэ.
             /// </summary>
-            /// <param name="value">Хадгалагдах тоо</param>
+            /// <param name="value">Санах ойд хадгалагдах утга</param>
             public MemoryItem(decimal value)
             {
                 Value = value;

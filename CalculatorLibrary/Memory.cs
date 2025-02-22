@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace CalculatorLibrary
 {
+    /// <summary>
+    /// Тооны машины санах ой. Санах ойн memory item-уудыг агуулж, зохицуулна.
+    /// </summary>
     public class Memory
     {
+        /// <summary>
+        /// Санах ойн жагсаалт.
+        /// </summary>
         private List<MemoryItem> memoryItems;
 
         /// <summary>
@@ -19,7 +25,7 @@ namespace CalculatorLibrary
         }
 
         /// <summary>
-        /// Утгыг санах ойд хадгална.
+        /// Өгсөн утгыг санах ойд хадгална.
         /// </summary>
         /// <param name="value">Хадгалагдах утга</param>
         public void Store(decimal value)
@@ -28,7 +34,7 @@ namespace CalculatorLibrary
         }
 
         /// <summary>
-        /// Санах ойн түүхийг буцаана.
+        /// Санах ойд хадгалсан бүх утгуудыг буцаана.
         /// </summary>
         /// <returns>Хадгалсан утгуудын жагсаалт</returns>
         public List<MemoryItem> GetHistory()
