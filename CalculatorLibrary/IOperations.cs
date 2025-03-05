@@ -14,15 +14,13 @@ public interface IOperations
     /// Хасах үйлдэл хийнэ.
     /// </summary>
     /// <param name="n">Хасагдагч</param>
-    /// <param name="m">Хасагч</param>
-    void Subtract(decimal n, decimal m);
+    void Subtract(decimal n);
 
     /// <summary>
     /// Нэмэх үйлдэл хийнэ.
     /// </summary>
-    /// <param name="n">Нэмэгдэхүүн</param>
     /// <param name="m">Нэмэгдэхүүн</param>
-    void Add(decimal n, decimal m);
+    void Add(decimal m);
 }
 
 

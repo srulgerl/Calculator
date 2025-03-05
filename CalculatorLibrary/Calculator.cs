@@ -11,23 +11,24 @@ namespace CalculatorLibrary;
 public class Calculator : AbsCalculator, IOperations
 {
     /// <summary>
-    /// өгсөн 2 тоог хооронд нь нэмнэ
+    /// өгсөн тоог нэмнэ
     /// </summary>
     /// <param name="m"></param>
-    /// <param name="n"></param>
 
-    public void Add(decimal m, decimal n)
+    public void Add(decimal m)
     {
-        Result = m + n;
+        Result += m;
+        SaveToMemory();
     }
     /// <summary>
-    /// өгсөн 2 тоог хооронд нь хасна
+    /// өгсөн тоог хасна
     /// </summary>
     /// <param name="m"></param>
-    /// <param name="n"></param>
-    public void Subtract(decimal m, decimal n)
+
+    public void Subtract(decimal m)
     {
-        Result = m - n;
+        Result -= m;
+        SaveToMemory();
     }
 }
 

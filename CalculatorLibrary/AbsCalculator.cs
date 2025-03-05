@@ -13,5 +13,21 @@ public abstract class AbsCalculator
     /// <summary>
     /// Тооны машины хамгийн сүүлийн тооцооллын үр дүн
     /// </summary>
-    public decimal Result { get; protected set; }
+    public decimal Result { get; protected set; } = 0;
+
+    protected Memory Memory { get; private set; }
+
+    public AbsCalculator(){
+        Memory = new Memory();
+    }
+    
+    protected void SaveToMemory()
+    {
+        Memory.Store(new MemoryItem(Result));
+    }
+    public void ShowMemory()
+    {
+        Memory.GetHistory();
+    }
+
 }

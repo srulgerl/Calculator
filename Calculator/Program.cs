@@ -12,27 +12,14 @@ internal class Program
     public static void Main(string[] args)
     {
         Calculator cal = new Calculator();
-        Memory memory = new Memory();
 
-        cal.Add(10,10);
-        memory.Store(cal.Result);
-        Console.WriteLine($"{cal.Result}"); 
+        cal.Add(10);
+  
+        cal.Add(4);
 
-        cal.Add(cal.Result, 4);
-        memory.Store(cal.Result);
-        Console.WriteLine($"{cal.Result}"); 
+        cal.Subtract(6);
 
-        cal.Subtract(cal.Result,6);
-        memory.Store(cal.Result);
-        Console.WriteLine($"{cal.Result}");
-
-        Console.WriteLine("\nSanah oin tuuh:");
-        foreach (var item in memory.GetHistory())
-        {
-            Console.WriteLine($"Hadgalsan utga: {item.Value}");
-        }
-
-        memory.Clear();
+        cal.ShowMemory();
     }
 
 }

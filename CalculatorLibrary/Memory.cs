@@ -27,22 +27,23 @@ namespace CalculatorLibrary
         /// <summary>
         /// Өгсөн утгыг санах ойд хадгална.
         /// </summary>
-        /// <param name="value">Хадгалагдах утга</param>
-        public void Store(decimal value)
+        /// <param name="item">Хадгалагдах утга</param>
+        public void Store(MemoryItem item)
         {
-            memoryItems.Add(new MemoryItem(value));
+            memoryItems.Add(item);
         }
 
         /// <summary>
         /// Санах ойд хадгалсан бүх утгуудыг буцаана.
         /// </summary>
         /// <returns>Хадгалсан утгуудын жагсаалт</returns>
-        public List<MemoryItem> GetHistory()
+        public void GetHistory()
         {
-            return memoryItems;
+            foreach (var item in memoryItems)
+            {
+                Console.WriteLine($"{item.Value}");
+            }
         }
-
-    
 
         /// <summary>
         /// Санах ойг цэвэрлэнэ.

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CalculatorLibrary
 {
     /// <summary>
-    /// Тооны машины санах ойн нэгж.
+    /// Тооны машины санах ойн нэг нэгж.
     /// </summary>
     public class MemoryItem
     {
