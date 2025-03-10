@@ -14,6 +14,19 @@ public class Calculator : AbsCalculator, IOperations
     /// өгсөн тоог нэмнэ
     /// </summary>
     /// <param name="m"></param>
+    public Calculator()
+    {
+        Memory Memory = new Memory();
+    }
+
+    protected void SaveToMemory()
+    {
+        Memory.Store(new MemoryItem(Result));
+    }
+    public void ShowMemory()
+    {
+        Memory.GetHistory();
+    }
 
     public void Add(decimal m)
     {

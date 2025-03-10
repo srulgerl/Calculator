@@ -17,17 +17,7 @@ public abstract class AbsCalculator
 
     protected Memory Memory { get; private set; }
 
-    public AbsCalculator(){
-        Memory = new Memory();
-    }
-    
-    protected void SaveToMemory()
-    {
-        Memory.Store(new MemoryItem(Result));
-    }
-    public void ShowMemory()
-    {
-        Memory.GetHistory();
-    }
+   
+
 
 }
