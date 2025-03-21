@@ -21,8 +21,21 @@ internal class Programs
         calculator.Add(5);
 
         calculator.SaveToMemory();
-  
 
+        var memoryItems = calculator.GetMemoryItems();
+        foreach (var item in memoryItems)
+        {
+            Console.WriteLine(item.Value);
+        }
+
+        calculator.ClearMemory();
+        Console.WriteLine("Memory cleared.");
+
+        memoryItems = calculator.GetMemoryItems();
+        if (memoryItems.Count == 0)
+        {
+            Console.WriteLine("Memory is empty.");
+        }
     }
 }
 

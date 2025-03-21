@@ -14,15 +14,9 @@ namespace CalculatorLibrary
         /// <summary>
         /// Санах ойн жагсаалт.
         /// </summary>
-        private List<MemoryItem> memoryItems;
+        private List<MemoryItem> memoryItems = new List<MemoryItem>();
 
-        /// <summary>
-        /// Шинэ санах ой үүсгэнэ.
-        /// </summary>
-        public Memory()
-        {
-            memoryItems = new List<MemoryItem>();
-        }
+      
 
         /// <summary>
         /// Өгсөн утгыг санах ойд хадгална.
@@ -45,7 +39,7 @@ namespace CalculatorLibrary
         /// <summary>
         /// Санах ойг цэвэрлэнэ.
         /// </summary>
-        public void Clear()
+        public void ClearMemory()
         {
             memoryItems.Clear();
         }
