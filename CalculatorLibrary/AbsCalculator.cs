@@ -14,5 +14,5 @@ public abstract class AbsCalculator
     /// Тооны машины хамгийн сүүлийн тооцооллын үр дүн
     /// </summary>
     public decimal Result { get; protected set; } = 0;
-
+  
 }

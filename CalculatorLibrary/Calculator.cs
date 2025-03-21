@@ -16,6 +16,11 @@ public class Calculator : AbsCalculator, IOperations
     /// </summary>
     /// <param name="m">Нэмэх тоо</param>
 
+    public Calculator()
+    {
+        Memory Memory = new Memory();
+    }
+
     public void Add(decimal m)
     {
         Result += m;
