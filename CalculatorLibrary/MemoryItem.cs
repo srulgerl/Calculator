@@ -11,11 +11,11 @@ namespace CalculatorLibrary
     /// </summary>
     public class MemoryItem
     {
-       
-            /// <summary>
-            /// Санах ойд хадгалагдсан утга.
-            /// </summary>
-            public decimal Value { get; private set; }
+
+        /// <summary>
+        /// Санах ойд хадгалагдсан утга.
+        /// </summary>
+        public decimal Value { get; private set; } = 0;
 
 
             /// <summary>

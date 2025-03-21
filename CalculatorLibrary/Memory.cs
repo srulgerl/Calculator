@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,21 +28,18 @@ namespace CalculatorLibrary
         /// Өгсөн утгыг санах ойд хадгална.
         /// </summary>
         /// <param name="item">Хадгалагдах утга</param>
-        public void Store(MemoryItem item)
+        public void SaveToMemory(decimal value)
         {
-            memoryItems.Add(item);
+            memoryItems.Add(new MemoryItem(value));
         }
 
         /// <summary>
         /// Санах ойд хадгалсан бүх утгуудыг буцаана.
         /// </summary>
         /// <returns>Хадгалсан утгуудын жагсаалт</returns>
-        public void GetHistory()
+        public List<MemoryItem> GetMemoryItems()
         {
-            foreach (var item in memoryItems)
-            {
-                Console.WriteLine($"{item.Value}");
-            }
+            return memoryItems;
         }
 
         /// <summary>

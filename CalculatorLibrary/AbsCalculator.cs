@@ -15,19 +15,4 @@ public abstract class AbsCalculator
     /// </summary>
     public decimal Result { get; protected set; } = 0;
 
-    protected Memory Memory { get; private set; }
-
-    public AbsCalculator(){
-        Memory = new Memory();
-    }
-    
-    protected void SaveToMemory()
-    {
-        Memory.Store(new MemoryItem(Result));
-    }
-    public void ShowMemory()
-    {
-        Memory.GetHistory();
-    }
-
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibrary", "Calcul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTest", "CalculatorTest\CalculatorTest.csproj", "{B1B08623-18FF-4DA6-9273-43D5B63A7277}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{419A756E-4502-4267-859E-B04218828CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,15 @@ Global
 		{B1B08623-18FF-4DA6-9273-43D5B63A7277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B08623-18FF-4DA6-9273-43D5B63A7277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B08623-18FF-4DA6-9273-43D5B63A7277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419A756E-4502-4267-859E-B04218828CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419A756E-4502-4267-859E-B04218828CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419A756E-4502-4267-859E-B04218828CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419A756E-4502-4267-859E-B04218828CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D5B74BB-734F-47F6-AC1E-DABB9BC02ACC}
 	EndGlobalSection
 EndGlobal

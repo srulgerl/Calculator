@@ -4,23 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CalculatorLibrary;
-
 namespace CalculatorApp;
 
-internal class Program
+internal class Programs
 {
     public static void Main(string[] args)
     {
-        Calculator cal = new Calculator();
+        Calculator calculator = new Calculator();
 
-        cal.Add(10);
+        calculator.Add(10);
+
+        calculator.Subtract(3);
+
+        calculator.SaveToMemory();
+
+        calculator.Add(5);
+
+        calculator.SaveToMemory();
   
-        cal.Add(4);
 
-        cal.Subtract(6);
-
-        cal.ShowMemory();
     }
-
 }
 
