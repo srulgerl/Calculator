@@ -15,7 +15,7 @@ namespace CalculatorLibrary
         /// <summary>
         /// Санах ойд хадгалагдсан утга.
         /// </summary>
-        public decimal Value { get; private set; }
+        public decimal Value { get;  set; }
 
 
         /// <summary>
@@ -26,5 +26,23 @@ namespace CalculatorLibrary
         {
             Value = value;
         }
+        /// <summary>
+        /// Санах ойн утгаас өгөгдсөн утгыг хасна.
+        /// </summary>
+        /// <param name="x">Хасах утга</param>
+        public void substractResult(decimal x)
+        {
+            Value -= x;
+        }
+
+        /// <summary>
+        /// Санах ойн утгад өгөгдсөн утгыг нэмнэ.
+        /// </summary>
+        /// <param name="x">Нэмэх утга</param>
+        public void AddResult(decimal x)
+        {
+            Value += x;
+        }
+       
     }
 }

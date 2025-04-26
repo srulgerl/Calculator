@@ -51,7 +51,6 @@
             btn_mc = new Button();
             lbl_mem = new Label();
             memoryItem = new Panel();
-            memoryItem.SuspendLayout();
             SuspendLayout();
             // 
             // result
@@ -64,7 +63,6 @@
             result.TabIndex = 0;
             result.Text = "0";
             result.TextAlign = ContentAlignment.MiddleRight;
-            result.Click += result_Click;
             // 
             // btn7
             // 
@@ -74,7 +72,7 @@
             btn7.TabIndex = 2;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
-            btn7.Click += NumberButton_Click;
+            btn7.Click += btnDigit_Click;
             // 
             // btn8
             // 
@@ -84,7 +82,7 @@
             btn8.TabIndex = 3;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
-            btn8.Click += NumberButton_Click;
+            btn8.Click += btnDigit_Click;
             // 
             // btn9
             // 
@@ -94,7 +92,7 @@
             btn9.TabIndex = 4;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
-            btn9.Click += NumberButton_Click;
+            btn9.Click += btnDigit_Click;
             // 
             // btn4
             // 
@@ -104,7 +102,7 @@
             btn4.TabIndex = 5;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
-            btn4.Click += NumberButton_Click;
+            btn4.Click += btnDigit_Click;
             // 
             // btn5
             // 
@@ -114,7 +112,7 @@
             btn5.TabIndex = 6;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
-            btn5.Click += NumberButton_Click;
+            btn5.Click += btnDigit_Click;
             // 
             // btn6
             // 
@@ -124,7 +122,7 @@
             btn6.TabIndex = 7;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
-            btn6.Click += NumberButton_Click;
+            btn6.Click += btnDigit_Click;
             // 
             // btn1
             // 
@@ -134,7 +132,7 @@
             btn1.TabIndex = 8;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
-            btn1.Click += NumberButton_Click;
+            btn1.Click += btnDigit_Click;
             // 
             // btn2
             // 
@@ -144,7 +142,7 @@
             btn2.TabIndex = 9;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
-            btn2.Click += NumberButton_Click;
+            btn2.Click += btnDigit_Click;
             // 
             // btn3
             // 
@@ -154,7 +152,7 @@
             btn3.TabIndex = 10;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
-            btn3.Click += NumberButton_Click;
+            btn3.Click += btnDigit_Click;
             // 
             // btn0
             // 
@@ -164,7 +162,7 @@
             btn0.TabIndex = 11;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = true;
-            btn0.Click += NumberButton_Click;
+            btn0.Click += btnDigit_Click;
             // 
             // btn_minus
             // 
@@ -174,7 +172,7 @@
             btn_minus.TabIndex = 12;
             btn_minus.Text = "-";
             btn_minus.UseVisualStyleBackColor = true;
-            btn_minus.Click += btn_msub_Click;
+            btn_minus.Click += btn_minus_Click;
             // 
             // btn_plus
             // 
@@ -210,79 +208,60 @@
             // 
             btn_ms.Location = new Point(421, 266);
             btn_ms.Name = "btn_ms";
-            btn_ms.Size = new Size(170, 98);
+            btn_ms.Size = new Size(364, 98);
             btn_ms.TabIndex = 17;
             btn_ms.Text = "MS";
             btn_ms.UseVisualStyleBackColor = true;
             btn_ms.Click += btn_ms_Click;
-            // // 
-            // // btn_mplus
-            // // 
-            // btn_mplus.Location = new Point(271, 72);
-            // btn_mplus.Name = "btn_mplus";
-            // btn_mplus.Size = new Size(75, 54);
-            // btn_mplus.TabIndex = 29;
-            // btn_mplus.Text = "M+";
-            // btn_mplus.UseVisualStyleBackColor = true;
-            // // 
-            // // btn_msub
-            // // 
-            // btn_msub.Location = new Point(354, 72);
-            // btn_msub.Name = "btn_msub";
-            // btn_msub.Size = new Size(75, 54);
-            // btn_msub.TabIndex = 28;
-            // btn_msub.Text = "M-";
-            // btn_msub.UseVisualStyleBackColor = true;
-            // // 
-            // // button1
-            // // 
-            // button1.Location = new Point(262, 68);
-            // button1.Name = "button1";
-            // button1.Size = new Size(75, 54);
-            // button1.TabIndex = 33;
-            // button1.Text = "M+";
-            // button1.UseVisualStyleBackColor = true;
-            // // 
-            // // btn_sub
-            // // 
-            // btn_sub.Location = new Point(345, 68);
-            // btn_sub.Name = "btn_sub";
-            // btn_sub.Size = new Size(75, 54);
-            // btn_sub.TabIndex = 32;
-            // btn_sub.Text = "M-";
-            // btn_sub.UseVisualStyleBackColor = true;
-            // // 
-            // // btn_mc
-            // // 
-            // btn_mc.Location = new Point(179, 68);
-            // btn_mc.Name = "btn_mc";
-            // btn_mc.Size = new Size(75, 54);
-            // btn_mc.TabIndex = 31;
-            // btn_mc.Text = "MC";
-            // btn_mc.UseVisualStyleBackColor = true;
-            // // 
-            // // lbl_mem
-            // // 
-            // lbl_mem.AutoSize = true;
-            // lbl_mem.BackColor = SystemColors.ControlLight;
-            // lbl_mem.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            // lbl_mem.Location = new Point(384, 7);
-            // lbl_mem.Name = "lbl_mem";
-            // lbl_mem.Size = new Size(43, 50);
-            // lbl_mem.TabIndex = 30;
-            // lbl_mem.Text = "0";
-            // // 
-            // // memoryItem
-            // // 
-            // memoryItem.BackColor = SystemColors.ControlLight;
-            // memoryItem.Controls.Add(button1);
-            // memoryItem.Controls.Add(btn_sub);
-            // memoryItem.Controls.Add(lbl_mem);
-            // memoryItem.Controls.Add(btn_mc);
-            // memoryItem.Location = new Point(844, 70);
-            // memoryItem.Name = "memoryItem";
-            // memoryItem.Size = new Size(442, 144);
-            // memoryItem.TabIndex = 33;
+            // 
+            // btn_mplus
+            // 
+            btn_mplus.Location = new Point(0, 0);
+            btn_mplus.Name = "btn_mplus";
+            btn_mplus.Size = new Size(75, 23);
+            btn_mplus.TabIndex = 0;
+            // 
+            // btn_msub
+            // 
+            btn_msub.Location = new Point(0, 0);
+            btn_msub.Name = "btn_msub";
+            btn_msub.Size = new Size(75, 23);
+            btn_msub.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            // 
+            // btn_sub
+            // 
+            btn_sub.Location = new Point(0, 0);
+            btn_sub.Name = "btn_sub";
+            btn_sub.Size = new Size(75, 23);
+            btn_sub.TabIndex = 0;
+            // 
+            // btn_mc
+            // 
+            btn_mc.Location = new Point(0, 0);
+            btn_mc.Name = "btn_mc";
+            btn_mc.Size = new Size(75, 23);
+            btn_mc.TabIndex = 0;
+            // 
+            // lbl_mem
+            // 
+            lbl_mem.Location = new Point(0, 0);
+            lbl_mem.Name = "lbl_mem";
+            lbl_mem.Size = new Size(100, 23);
+            lbl_mem.TabIndex = 0;
+            // 
+            // memoryItem
+            // 
+            memoryItem.Location = new Point(0, 0);
+            memoryItem.Name = "memoryItem";
+            memoryItem.Size = new Size(200, 100);
+            memoryItem.TabIndex = 0;
             // 
             // Form1
             // 
@@ -308,8 +287,6 @@
             Controls.Add(result);
             Name = "Form1";
             Text = "=";
-            memoryItem.ResumeLayout(false);
-            memoryItem.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }

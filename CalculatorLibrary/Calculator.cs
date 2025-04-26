@@ -52,5 +52,13 @@ public class Calculator : AbsCalculator, IOperations
     {
         memory.ClearMemory();
     }
-}
+
+    public void ClearMemory(MemoryItem item)
+    {
+        memory.RemoveMemoryItem(item);
+    }
+
+
+} 
+
 
